@@ -56,7 +56,7 @@ Exec=%{_bindir}/kbpm-dj
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=Qt;AudioVideo;Audio;X-MandrivaLinux-Multimedia-Sound;AudioVideo;Mixer
+Categories=Qt;AudioVideo;Audio;X-MandrivaLinux-Multimedia-Sound;AudioVideo;Mixer;
 EOF
 
 %clean
