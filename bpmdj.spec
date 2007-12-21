@@ -13,6 +13,7 @@ Patch1:         %name-2.4-fix-build.patch
 URL:		http://bpmdj.sourceforge.net/
 License:	GPL
 Group:		Sound
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	qt3-devel
 BuildRequires:  alsa-lib-devel
 
