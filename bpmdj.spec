@@ -42,10 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -fr $RPM_BUILD_ROOT/%_docdir
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="kbpm-dj" icon="sound_section.png" needs="x11" title="BPMDJ" longtitle="DJ Software" section="Multimedia/Sound" xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -72,6 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc authors changelog copyright readme ripping todo
 %{_bindir}/*
-%{_menudir}/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 
