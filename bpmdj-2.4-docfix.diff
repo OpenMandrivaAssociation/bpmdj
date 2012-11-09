@@ -1,0 +1,11 @@
+--- makefile~	2004-07-08 14:24:06.777483850 +0200
++++ makefile	2004-07-08 14:24:55.666959480 +0200
+@@ -81,7 +81,7 @@
+ install: 
+ 	for bin in $(BIN); do $(INSTALL) -D -m 755 $$bin ${DESTDIR}/usr/bin/$$bin; done
+ 	for doc in $(DOC); do $(INSTALL) -D -m 755 $$doc ${DESTDIR}/usr/share/doc/bpmdj/$$doc; done
+-	for doc in documentation/*; do $(INSTALL) -D -m 755 documentation/$$doc ${DESTDIR}/usr/share/doc/bpmdj/$$doc; done
++	for doc in documentation/*; do $(INSTALL) -D -m 755 $$doc ${DESTDIR}/usr/share/doc/bpmdj/$$doc; done
+ 
+ uninstall: 
+ 	for bin in $(BIN); do $(RM) ${DESTDIR}/usr/bin/$$bin; done
