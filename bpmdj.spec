@@ -10,7 +10,7 @@ Release: 	%{release}
 Source:		%{name}-%{version}.source.tar.bz2
 Patch:		%name-2.4-docfix.diff
 Patch1:         %name-2.4-fix-build.patch
-URL:		http://bpmdj.sourceforge.net/
+URL:		https://bpmdj.sourceforge.net/
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
