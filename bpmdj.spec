@@ -14,6 +14,7 @@ URL:		https://bpmdj.sourceforge.net/
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	make
 BuildRequires:	qt3-devel
 BuildRequires:  alsa-lib-devel
 
